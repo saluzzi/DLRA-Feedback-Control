@@ -1,16 +1,28 @@
 # DLRA_Feedback_Control
 
-This repository provides MATLAB scripts to compute feedback control based on the State Dependent Riccati Equation via **Dynamic Low-Rank Approximation (DLRA)** solver.
+This repository implements dynamical low-rank approximation (DLRA) techniques for optimal control of the nonlinear Burgers' equation in 1D and 2D using feedback laws obtained from the solution of matrix Riccati equations.
 
-## Repository Structure
+## Features
 
-- **main_Burgers1D.m**: Compute feedback control for the 1D Burgers' equation, comparing FOM and DLRA strategy.  
-- **control_full.m**: Full-order Riccati solver and control computation.  
-- **control_proj.m**: Projected control solver for reduced-order model.  
-- **newton_kleinman.m**: Newton–Kleinman iterative solver for the continuous-time algebraic Riccati equation.  
-- **second_uflow.m**: 2nd-order Runge–Kutta integrator on the Stiefel manifold for low-rank basis evolution.  
-- **retract.m**: Retraction operator ensuring orthonormality of updated basis on the Stiefel manifold.  
-- **invDretract.m**: Inverse differential of the retraction map for accurate tangent updates.  
+- Approximation of the solution via dynamical low-rank method.
+- Feedback control using Riccati-based Newton-Kleinman iterations and the cascade approach.
+- Rank enrichment strategy.
+  
+## Files Overview
+
+### Main Scripts
+
+- `burgers_control_main.m`: Main script to run the control simulation for the Burgers' equation.
+- `setting_Burgers1D.m`: Defines spatial/temporal discretization and operators for the 1D case.
+- `setting_Burgers2D.m`: Defines spatial/temporal discretization and operators for the 2D case.
+
+### Auxiliary Functions
+
+- `control_full.m`: Solves the full-order control problem using Newton-Kleinman.
+- `newton_kleinman.m`: Newton-Kleinman iterative solver for the continuous-time algebraic Riccati equation.
+- `second_uflow.m`: Second-order Runge-Kutta-Munthe-Kaas method to evolve the low-rank factor.
+- `retract.m`: Retraction operator ensuring orthonormality of updated basis on the Stiefel manifold.  
+- `invDretract.m`: Inverse differential of the retraction map for accurate tangent updates.
 
 ## Notes
 
