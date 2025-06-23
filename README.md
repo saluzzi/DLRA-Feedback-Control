@@ -29,7 +29,7 @@ L. Saluzzi and M. Strazzullo, "Dynamical Low-Rank Approximation Strategies for N
 
 ## Notes
 
-- **Adaptive Rank**: When `isAdaptive = true`, the low-rank basis is enriched with information from the Riccati solution to capture control dynamics.
+- **Rank Enrichment**: When `isRankEnrich  = true`, the low-rank basis is enriched with information from the Riccati solution to capture control dynamics.
 - **Riccati Solver**: The Newton–Kleinman routine supports line search; you can toggle `linesearch` and adjust tolerances for convergence behavior.
 
 
