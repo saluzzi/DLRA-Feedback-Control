@@ -4,9 +4,9 @@ This repository provides MATLAB scripts to compute feedback control with PDE con
 
 ## Repository Structure
 
-- **burgers_control_main.m**: Main driver script orchestrating FOM vs. DLRA control.  
+- **main1D.m**: Compute feedback control for the 1D Burgers' equation, comparing FOM and DLRA strategy.  
 - **control_full.m**: Full-order Riccati solver and control computation.  
-- **control_proj_T2.m**: Projected control solver for reduced-order model.  
+- **control_proj.m**: Projected control solver for reduced-order model.  
 - **newton_kleinman.m**: Newton–Kleinman iterative solver for the continuous-time algebraic Riccati equation.  
 - **second_uflow.m**: 2nd-order Runge–Kutta integrator on the Stiefel manifold for low-rank basis evolution.  
 - **retract.m**: Retraction operator ensuring orthonormality of updated basis on the Stiefel manifold.  
