@@ -1,4 +1,4 @@
-# DLRA_Feedback_Control
+# DLRA-Feedback-Control
 
 This repository implements dynamical low-rank approximation (DLRA) techniques for optimal control of the nonlinear Burgers' equation in 1D and 2D using feedback laws obtained from the solution of matrix Riccati equations.
 
