@@ -4,7 +4,7 @@ This repository provides MATLAB scripts to compute feedback control with PDE con
 
 ## Repository Structure
 
-- **main1D.m**: Compute feedback control for the 1D Burgers' equation, comparing FOM and DLRA strategy.  
+- **main_Burgers1D.m**: Compute feedback control for the 1D Burgers' equation, comparing FOM and DLRA strategy.  
 - **control_full.m**: Full-order Riccati solver and control computation.  
 - **control_proj.m**: Projected control solver for reduced-order model.  
 - **newton_kleinman.m**: Newton–Kleinman iterative solver for the continuous-time algebraic Riccati equation.  
