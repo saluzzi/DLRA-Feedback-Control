@@ -1,6 +1,6 @@
 # DLRA_Feedback_Control
 
-This repository provides MATLAB scripts to compute feedback control with PDE constrants via **Dynamic Low-Rank Approximation (DLRA)** solver.
+This repository provides MATLAB scripts to compute feedback control based on the State Dependent Riccati Equation via **Dynamic Low-Rank Approximation (DLRA)** solver.
 
 ## Repository Structure
 
