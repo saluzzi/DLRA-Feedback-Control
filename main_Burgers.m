@@ -71,9 +71,9 @@ U = U0(:, 1:l_y0);
 % Optional Enrichment of the basis
 if isRankEnrich
     [~, P0] = control_FOM(y0(:,1), speye(Nh));
-    if isP0
+    if isP0        % employ the information from the Riccati solution P0
         MM = full(P0);
-    else
+    else           % employ the information from the feedback matrix K
         K = (-invRB*P0)';
         MM = full(K);
     end

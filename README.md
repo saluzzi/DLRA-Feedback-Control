@@ -9,7 +9,7 @@ L. Saluzzi and M. Strazzullo, "Dynamical Low-Rank Approximation Strategies for N
 
 - Approximation of the solution via dynamical low-rank method.
 - Feedback control using Riccati-based Newton-Kleinman iterations and the cascade approach.
-- Rank enrichment strategy.
+- Riccati-based rank enrichment strategy.
   
 ## Files Overview
 
